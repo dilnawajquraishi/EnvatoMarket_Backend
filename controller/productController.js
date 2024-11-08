@@ -64,6 +64,8 @@ exports.updateProduct = async (req, res) => {
 }
 
 
+
+
 //////    delete product /////////
 exports.deleteProduct =  async (req, res) => {
     let id = req.params.id
@@ -124,7 +126,7 @@ exports.getProductByfilter = async (req, res) => {
 exports.getProductByName= async (req, res) => {
     let productName = req.params.productName
     let data = await productModel.find({ productName: productName })
-    res.json(data)
+    res.(data)
 }
 
 
